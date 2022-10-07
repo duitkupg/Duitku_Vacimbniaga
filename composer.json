@@ -1,0 +1,35 @@
+{
+  "name": "duitku_payment_gateway/duitku_va_cimbniaga",
+  "description": "Magento 2 payment module for Duitku VA cimb niaga",
+  "type": "magento2-module",
+  "version": "1.0.0",
+	"authors" : [
+		{
+			"name": "Rayhan Nabhan Lukmansyah",
+			"email": "rayhan@duitku.com",
+			"homepage": "https://duitku.com",
+			"role": "Developer"
+		}
+	],
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "php": "~7.1.0|~8.1.0|8.1.6"
+  },
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Duitku\\Vacimbniaga\\": ""
+    }
+  },
+	"keywords": [
+		"magento2",
+		"magento 2",
+		"magento24",
+		"magento 2.4",
+		"duitku",
+		"duitku cimb niaga",
+		"cimb niaga"
+	]
+}
