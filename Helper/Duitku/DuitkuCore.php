@@ -1,5 +1,7 @@
 <?php
-include_once('ApiRequestor.php');
+namespace Duitku\Vacimbniaga\Helper\Duitku;
+// include_once('ApiRequestor.php');
+use Duitku\Vacimbniaga\Helper\Duitku\Duitku_Vacimbniaga_ApiRequestor;
 class Duitku_Vacimbniaga_Core {
 
   public static function getRedirectionUrl($baseUrl, $params)

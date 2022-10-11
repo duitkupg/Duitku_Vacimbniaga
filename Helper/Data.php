@@ -14,10 +14,10 @@
  */
 
 namespace Duitku\Vacimbniaga\Helper;
-include_once('Duitku/ApiRequestor.php');
-include_once('Duitku/DuitkuCore.php');
+// include_once('Duitku/ApiRequestor.php');
+// include_once('Duitku/DuitkuCore.php');
 use Duitku\Vacimbniaga\Helper\DuitkuConstants;
-use Duitku_Vacimbniaga_Core;
+use Duitku\Vacimbniaga\Helper\Duitku\Duitku_Vacimbniaga_Core;
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /**
