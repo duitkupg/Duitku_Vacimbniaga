@@ -2,7 +2,6 @@
   "name": "duitku_payment_gateway/duitku_va_cimbniaga",
   "description": "Magento 2 payment module for Duitku VA cimb niaga",
   "type": "magento2-module",
-  "version": "1.0.0",
 	"authors" : [
 		{
 			"name": "Rayhan Nabhan Lukmansyah",
