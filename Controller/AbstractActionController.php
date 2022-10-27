@@ -147,7 +147,8 @@ abstract class AbstractActionController extends \Magento\Framework\App\Action\Ac
 		$message = __("Order placed and is now awaiting payment authorization");
 		$order->addStatusToHistory($message);
 		$order->setIsNotified(false);
-		$order->save();
+		// $order->save();
+		$this->saveOrder($order);
 	}
 
 	protected function acceptOrder(){
@@ -341,6 +342,22 @@ abstract class AbstractActionController extends \Magento\Framework\App\Action\Ac
 			throw $ex;
 		}
 	}
+
+	/**
+     * Save order with order repository
+     *
+     * @param OrderInterface $order
+     * @throws \Exception
+     */
+    public function saveOrder(\Magento\Sales\Api\Data\OrderInterface $order)
+    {
+        try {
+            $this->_orderRepository->save($order);
+        } catch (\Exception $e) {
+            $error_exception = "AbstractAction.class SaveOrder : " . $e;
+            $this->_duitkuLogger->addRecord(500, $error_exception);
+        }
+    }
 
 	/**
 	* Log Error
